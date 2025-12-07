@@ -1,1 +1,78 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Test</title></head><body><h1>Funciona</h1></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Silence After the Answer — Rul</title>
+
+  <!-- SEO / preview -->
+  <meta name="description" content="Landing de Rul — The Silence After the Answer">
+  <meta property="og:title" content="The Silence After the Answer" />
+  <meta property="og:description" content="Pensamiento, IA y energía desde la Patagonia." />
+  <meta property="og:image" content="./assets/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="./assets/favicon.ico" />
+  <style>
+    :root { --bg:#0b0b10; --fg:#eaeaf0; --muted:#a8a8b3; --card:#13131a; }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial;
+      background:var(--bg); color:var(--fg); display:grid; place-items:center; padding:24px;
+    }
+    .card{
+      width:min(920px,100%); background:var(--card); border-radius:24px; padding:28px;
+      box-shadow:0 10px 50px rgba(0,0,0,.35);
+    }
+    .hero{display:flex; gap:24px; align-items:center; flex-wrap:wrap}
+    .hero img{width:120px;height:120px;border-radius:999px;object-fit:cover; border:2px solid #333}
+    .title{font-size:28px; margin:0}
+    .sub{color:var(--muted); margin:6px 0 0}
+    .cta{display:flex; gap:12px; margin-top:18px; flex-wrap:wrap}
+    .btn{
+      padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:8px;
+      background:#ffffff10; border:1px solid #ffffff20; color:var(--fg);
+    }
+    .btn:hover{background:#ffffff18}
+    .grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:22px}
+    .tile{padding:16px;border-radius:14px;background:#ffffff08;border:1px solid #ffffff12}
+    @media (max-width:720px){ .grid{grid-template-columns:1fr} }
+    .sr{position:absolute; left:-9999px}
+    /* Colores de redes */
+    .x{border-color:#222}
+    .ig{border-color:#d6249f}
+    .yt{border-color:#ff0000}
+    .bmc{border-color:#ffdd00}
+    .center{display:flex; justify-content:center; margin-top:18px}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <section class="hero">
+      <img src="./avatar.png" alt="Avatar de Rul" />
+      <div>
+        <h1 class="title">The Silence After the Answer</h1>
+        <p class="sub">Rul — IA, energía y filosofía práctica desde la Patagonia 🐺</p>
+        <div class="cta">
+          <a class="btn x" href="https://x.com/tigbuh" target="_blank" rel="noopener">X / @tigbuh</a>
+          <a class="btn ig" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn yt" href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn bmc" href="https://buymeacoffee.com/tigbuh" target="_blank" rel="noopener">Buy me a coffee</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="destacados">
+      <h2 id="destacados" class="sr">Destacados</h2>
+      <div class="tile">• Hilos de IA aplicadas a la vida diaria</div>
+      <div class="tile">• Proyectos: AICohol (PWA) & PostAuto (n8n)</div>
+      <div class="tile">• Escrito: “Crónicas del Resurgir”</div>
+    </section>
+
+    <div class="center">
+      <a class="btn" href="mailto:rjrm84@gmail.com">Contacto</a>
+    </div>
+  </main>
+</body>
+</html>
