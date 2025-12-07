@@ -1,4 +1,6 @@
-export default function Hero() {
+import avatar from "../assets/avatar.png";
+
+export default function Hero(): JSX.Element {
   return (
     <section className="hero">
       <p className="hero-kicker">DIGITAL INTELLIGENCE • CONTENT • GROWTH</p>
@@ -31,13 +33,14 @@ export default function Hero() {
         </a>
       </div>
 
-     <div className="hero-avatar-wrapper">
-  <img
-    src="/avatar.png"
-    alt="Rul avatar"
-    className="hero-avatar-img"
-  />
-</div>
+      <div className="hero-avatar-wrapper">
+        <img
+          src={avatar}
+          alt="Rul avatar"
+          className="hero-avatar-img"
+          loading="lazy"
+        />
+      </div>
 
       <p className="hero-legend">
         THE WOLF WITHIN · “THE SILENCE AFTER THE ANSWER”
