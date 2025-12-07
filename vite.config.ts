@@ -1,13 +1,14 @@
+// vite.config.ts
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react({
-      babel: {
-        plugins: [['babel-plugin-react-compiler']],
-      },
+      // (opcional) si querés este plugin de Babel, va acá:
+      babel: { plugins: [['babel-plugin-react-compiler']] },
     }),
   ],
+  // 👇 ESTA línea es la clave para GitHub Pages
+  base: '/tigbuh-landing/',
 })
