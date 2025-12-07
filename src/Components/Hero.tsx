@@ -1,6 +1,6 @@
 import avatar from "../assets/avatar.png";
 
-export default function Hero(): JSX.Element {
+export default function Hero() {
   return (
     <section className="hero">
       <p className="hero-kicker">DIGITAL INTELLIGENCE • CONTENT • GROWTH</p>
